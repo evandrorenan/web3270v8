@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/listaSysout">
+
+    <fragment
+        android:id="@+id/listaSysout"
+        android:name="br.com.evandrorenan.web3270v8.ui.ListaSysoutsFragment"
+        android:label="Sysouts"
+        tools:layout="@layout/fragment_extrai_sysout" >
+        <action
+            android:id="@+id/action_listaSysout_to_solicitaExtracaoSysout"
+            app:destination="@id/solicitaExtracaoSysout" />
+    </fragment>
+    <fragment
+        android:id="@+id/solicitaExtracaoSysout"
+        android:name="br.com.evandrorenan.web3270v8.ui.ExtraiSysoutFragment"
+        android:label="Solicitar nova extração de sysout" />
+</navigation>
