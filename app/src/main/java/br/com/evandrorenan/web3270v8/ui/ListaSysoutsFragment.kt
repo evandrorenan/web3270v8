@@ -29,8 +29,14 @@ class ListaSysoutsFragment : Fragment() {
             container,
             false)
 
+        binding.listaSysoutFabConsultar.setOnClickListener(
+            Navigation.createNavigateOnClickListener(
+                ListaSysoutsFragmentDirections.actionListaSysoutToConsultarSysout(0))
+        )
+
         binding.listaSysoutFabExtrairNova.setOnClickListener (
-            Navigation.createNavigateOnClickListener(R.id.action_listaSysout_to_solicitaExtracaoSysout)
+            Navigation.createNavigateOnClickListener(
+                ListaSysoutsFragmentDirections.actionListaSysoutToSolicitaExtracaoSysout())
 //            A linha acima eh uma forma mais facil de fazer isso:
 //            { view ->
 //                val navController = view.findNavController()

@@ -1,5 +1,5 @@
-package br.com.evandrorenan.web3270v8.ui.data
-data class SolicitacaoExtracaoSysout(
+package br.com.evandrorenan.web3270v8.data
+data class RequestExtracaoSysout(
     var evt: String = "",
     var usuario: String = "",
     var senha: String = "",

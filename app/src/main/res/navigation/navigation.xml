@@ -13,9 +13,20 @@
         <action
             android:id="@+id/action_listaSysout_to_solicitaExtracaoSysout"
             app:destination="@id/solicitaExtracaoSysout" />
+        <action
+            android:id="@+id/action_listaSysout_to_consultarSysout"
+            app:destination="@id/consultarSysout" />
     </fragment>
     <fragment
         android:id="@+id/solicitaExtracaoSysout"
         android:name="br.com.evandrorenan.web3270v8.ui.ExtraiSysoutFragment"
         android:label="Solicitar nova extração de sysout" />
+    <fragment
+        android:id="@+id/consultarSysout"
+        android:name="br.com.evandrorenan.web3270v8.ui.ConsultarSysoutFragment"
+        android:label="ConsultarSysout" >
+        <argument
+            android:name="sysoutId"
+            app:argType="integer" />
+    </fragment>
 </navigation>

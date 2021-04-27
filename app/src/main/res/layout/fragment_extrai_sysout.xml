@@ -6,8 +6,8 @@
     <data>
 
         <variable
-            name="solicitacaoExtracaoSysout"
-            type="br.com.evandrorenan.web3270v8.ui.data.SolicitacaoExtracaoSysout" />
+            name="requestExtracaoSysout"
+            type="br.com.evandrorenan.web3270v8.data.RequestExtracaoSysout" />
     </data>
 
     <ScrollView
@@ -40,7 +40,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Evt"
-                    android:text="@={solicitacaoExtracaoSysout.evt}" />
+                    android:text="@={requestExtracaoSysout.evt}" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -60,7 +60,7 @@
                     android:id="@+id/extrai_sysout_usuario_evt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@={solicitacaoExtracaoSysout.usuario}" />
+                    android:text="@={requestExtracaoSysout.usuario}" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -80,7 +80,7 @@
                     android:id="@+id/extrai_sysout_senha_evt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@={solicitacaoExtracaoSysout.senha}" />
+                    android:text="@={requestExtracaoSysout.senha}" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -102,7 +102,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Opcao"
-                    android:text="@={solicitacaoExtracaoSysout.opcao}" />
+                    android:text="@={requestExtracaoSysout.opcao}" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -122,7 +122,7 @@
                     android:id="@+id/extrai_sysout_jobid"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@={solicitacaoExtracaoSysout.jobId}" />
+                    android:text="@={requestExtracaoSysout.jobId}" />
 
             </com.google.android.material.textfield.TextInputLayout>
 

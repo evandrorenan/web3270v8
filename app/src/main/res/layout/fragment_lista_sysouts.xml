@@ -30,6 +30,22 @@
             app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@android:drawable/ic_input_add" />
 
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/lista_sysout_fab_consultar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="42dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toTopOf="@id/lista_sysout_fab_extrair_nova"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="?android:attr/actionModeFindDrawable" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
